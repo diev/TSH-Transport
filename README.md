@@ -98,5 +98,5 @@ Licensed under the [Apache License, Version 2.0].
 [Информация о новых версиях программного обеспечения]: http://www.cbr.ru/mcirabis/?PrtId=itest (СВК, УТА)
 [семантического версионирования]: http://semver.org/lang/ru/
 
-[Build status]: https://ci.appveyor.com/api/projects/status/1mvedcg27p6n7aj0?svg=true
+[Build status]: https://ci.appveyor.com/api/projects/status/u711fgbccyxs2i6m?svg=true
 [GitHub Release]: https://img.shields.io/github/release/diev/TSH-Transport.svg

@@ -12,7 +12,7 @@ install:
 - ps: >-
     $AppFile = 'TshTrans\TshTrans.ps1'
 
-    $RegularExpression = [regex] "\$Version\s+=\s+\'(\d*\.\d*\.\d*)\'"
+    $RegularExpression = [regex] "Version\s*=\s*'(\d*\.\d*\.\d*)'"
 
     $FileContent = Get-Content $AppFile
 
@@ -52,7 +52,7 @@ artifacts:
 deploy:
 - provider: GitHub
   tag: v$(version)
-  release: PTK PSD Browser v$(version)
+  release: TSH Transport v$(version)
   description: 'Build #$(appveyor_build_number) by AppVeyor $(BuildDate): $(appveyor_repo_commit_message) ([Changelog](https://github.com/$(appveyor_repo_name)/blob/master/CHANGELOG.md))\nSee docs on $(Site).'
   auth_token:
     secure: CePfctnBFd3iDwgVWlGOD6mfxQZrNBHK7IpsCK/deo2vHxA3lTr2nRnhbqpKqchQ
